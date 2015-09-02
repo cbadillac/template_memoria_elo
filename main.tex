@@ -1,0 +1,49 @@
+\documentclass[12pt,spanish,oneside]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+
+%Interlineado
+\usepackage{setspace}
+\setstretch{1.5}
+
+\usepackage{times}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{soul}
+\usepackage{fancyhdr}
+\usepackage{subfiles}
+\usepackage{blindtext}
+
+\usepackage[bookmarks=true]{hyperref}
+\usepackage{bookmark}
+
+%Margenes
+\usepackage[top=3cm,bottom=3cm,left=4.2cm,right=3cm]{geometry}
+
+\renewcommand\headrulewidth{0pt}
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\fancyfoot[R]{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	\subfile{capitulos/portada/portada}
+	\pagestyle{fancy}
+	\subfile{capitulos/cap0/cap0}
+	\tableofcontents	
+	\subfile{capitulos/cap1/cap1}	
+	\subfile{capitulos/cap2/cap2}
+	\subfile{capitulos/ref/ref}
+	\subfile{capitulos/anexos/anexos}
+	
+\end{document}
