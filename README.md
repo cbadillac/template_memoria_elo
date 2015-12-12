@@ -6,11 +6,11 @@ Este template tiene por caracterísica la división de capítulos en archivos di
 ## Modo de uso
 
 ### Agregar capítulo
-Para agregar un capítulo nuevo, crear una carpeta para éste capítulo dentro de la carpeta *capitulos*, y dentro agregar el archivo .tex correspondiente.
+Para agregar un capítulo nuevo, agregar el archivo .tex correspondiente.
 El contenido básico del archivo debe ser el siguiente:
 
 ```
-\documentclass[../../main.tex]{subfiles}
+\documentclass[main.tex]{subfiles}
 \begin{document}
    %% poner aqui el contenido
 \end{document}
@@ -18,7 +18,7 @@ El contenido básico del archivo debe ser el siguiente:
 
 Luego, para finalizar, agregar lo siguiente al archivo *main.tex*
 
-> ` \subfile{capitulos/nombre_carpeta_cap/cap_x} `
+> ` \subfile{cap_x} `
 
 ## Dudas, Consultas y/o Recomendaciones
 
